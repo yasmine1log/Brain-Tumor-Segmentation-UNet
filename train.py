@@ -1,12 +1,12 @@
 
 import os
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
-
+import tensorflow as tf
 import numpy as np
 import cv2
 from glob import glob
 from sklearn.utils import shuffle
-import tensorflow as tf
+
 from tensorflow.keras.callbacks import ModelCheckpoint, CSVLogger, ReduceLROnPlateau, EarlyStopping, TensorBoard
 from tensorflow.keras.optimizers import Adam
 from sklearn.model_selection import train_test_split
